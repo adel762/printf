@@ -13,7 +13,7 @@ int _printf(const char *format, ...)
 	int i = 0, counter = 0;
 	va_list list;
 
-	if (format == "NULL")
+	if (format == NULL)
 		return (-1);
 	va_start(list, format);
 	while (format && format[i])
@@ -28,7 +28,7 @@ int _printf(const char *format, ...)
 			i++;
 			while (format[i] == ' ')
 				i++;
-			if (format[i] == "NULL")
+			if (format[i] == '\0')
 				break;
 			counter += op(format[i], &list);
 		}

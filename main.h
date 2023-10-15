@@ -12,5 +12,6 @@ int _printf(const char *format, ...);
 int MO_mod(char c);
 int MO_char_char(char c);
 int MO_str(char *s);
+int op(char c, va_list *list);
 
-#endif/*the_end*/
+#endif
