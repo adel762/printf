@@ -13,7 +13,7 @@ int MO_mod(char c);
 int MO_char_char(char c);
 int MO_str(char *s);
 int op(char c, va_list *list);
-int MO_help(int d, int a,int x);
+int MO_help(int d, int a, int x);
 int MO_int(va_list **list);
 
 #endif
