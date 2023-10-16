@@ -19,6 +19,6 @@ int op(char c, va_list *list)
 	else if (c == 's')
 		counter += MO_str(va_arg(*list, char *));
 	else if (c == 'i' || c == 'd')
-		counter +=MO_int(&list);
+		counter += MO_int(&list);
 	return (counter);
 }

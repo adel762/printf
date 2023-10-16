@@ -82,7 +82,6 @@ int MO_help(int d, int a, int x)
 		i++;
 	}
 	return (i);
-	
 }
 
 /**
