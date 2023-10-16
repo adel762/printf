@@ -56,6 +56,32 @@ int MO_str(char *s)
 
 int MO_help(int d, int a, int x)
 {
+	int i = 0;
+	char c = 48;
+
+	while (d)
+	{
+		if (x == 0)
+		{
+			x += a / d;
+		}
+		if (x > 0)
+		{
+			c += (int) ((a / d) % 10);
+			write(1, &c, 1);
+			i++;
+			c = 48;
+		}
+		if (d == 1)
+			break;
+		d /= 10;
+	}
+	if (x == 0 && a == 0)
+	{
+		write(1, '0', 1);
+		i++;
+	}
+	return (i);
 	
 }
 
@@ -73,6 +99,28 @@ int MO_int(va_list **list)
 
 	if (a >= INT_MIN && a <= INT_MAX)
 	{
-		if (
+		if (a >= 0)
+			i += MO_help(d, a, x);
+		else
+		{
+			i++;
+			write(1, "-", 1);
+			while (d)
+			{
+				if (x == 0)
+					x -= (a / d);
+				if (x > 0)
+				{
+					c -= (int) ((a / d) % 10);
+					write(1, &c, 1);
+					i++;
+					c = 48;
+				}
+				if (d == 1)
+					break;
+				d /= 10;
+			}
+		}
 	}
+	return (i);
 }
