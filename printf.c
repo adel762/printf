@@ -27,7 +27,10 @@ int _printf(const char *format, ...)
 		{
 			i++;
 			while (format[i] == ' ')
+			{
 				i++;
+				counter++;
+			}
 			if (format[i] == '\0')
 				break;
 			counter += op(format[i], &list);
