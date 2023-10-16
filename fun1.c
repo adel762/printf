@@ -78,7 +78,7 @@ int MO_help(int d, int a, int x)
 	}
 	if (x == 0 && a == 0)
 	{
-		write(1, '0', 1);
+		write(1, "0", 1);
 		i++;
 	}
 	return (i);
