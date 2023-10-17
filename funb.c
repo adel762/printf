@@ -7,8 +7,8 @@
  */
 int MO_bin(va_list **ll)
 {
-	unsigned int k = va_arg(**ll,unsignd int);
-	int sum = 1, int p = 0;
+	unsigned int k = va_arg(**ll,unsigned int);
+	int sum = 1, p = 0;
 	char C[64];
 
 	sum--;
@@ -29,7 +29,7 @@ int MO_bin(va_list **ll)
 		p = sum;
 		p--;
 		while (--sum >= 0)
-			MO_char_char(char c);
+			MO_char_char(char C);
 				p++;
 		return (p);
 	}
