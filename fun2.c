@@ -20,5 +20,7 @@ int op(char c, va_list *list)
 		counter += MO_str(va_arg(*list, char *));
 	else if (c == 'i' || c == 'd')
 		counter += MO_int(&list);
+	else if (c == 'R')
+		counter += rot_3(va_arg(*list, char *));
 	return (counter);
 }
