@@ -12,7 +12,7 @@ int MO_bin(va_list **ll)
 	char C[64];
 
 	sum--;
-	if (a == 0)
+	if (k == 0)
 	{
 		sum++;
 		write(1, "0", 1);
