@@ -10,7 +10,7 @@ int rot_3(char *s)
 {
 	int i;
 
-	if (s == "NULL")
+	if (!s)
 		return (MO_str("(null)"));
 	for (i = 0; s[i]; i++)
 	{
@@ -33,4 +33,3 @@ int rot_3(char *s)
 	}
 		return (i);
 }
-
