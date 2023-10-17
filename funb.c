@@ -24,7 +24,7 @@ int MO_bin(va_list **ll)
 		{
 			C[sum] = (k % 2) + '0';
 			sum++;
-			k /=2;
+			k /= 2;
 		}
 		p = sum;
 		p--;
