@@ -24,12 +24,12 @@ int MO_bin(va_list **ll)
 		{
 			C[sum] = (k % 2) + '0';
 			sum++;
-			k /=2;
+			k /= 2;
 		}
 		p = sum;
 		p--;
 		while (--sum >= 0)
-			MO_char_char(char C);
+			MO_char_char(C[sum]);
 				p++;
 		return (p);
 	}
