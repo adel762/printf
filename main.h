@@ -17,5 +17,6 @@ int MO_help(int d, int a, int x);
 int MO_int(va_list **list);
 int MO_bin(va_list **ll);
 int rot_3(char *s);
+int MO_rev(char *s);
 
 #endif

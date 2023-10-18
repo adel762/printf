@@ -24,5 +24,7 @@ int op(char c, va_list *list)
 		counter += rot_3(va_arg(*list, char *));
 	else if (c == 'b')
 		counter += MO_bin(&list);
+	else if (c == 'r')
+		counter += MO_rev(va_arg(*list, char *));
 	return (counter);
 }
