@@ -22,7 +22,7 @@ int op(char c, va_list *list)
 		counter += MO_int(&list);
 	else if (c == 'R')
 		counter += rot_3(va_arg(*list, char *));
-	else if (c == b)
+	else if (c = b')
 		counter += MO_bin(va_list **ll);
 	return (counter);
 }
