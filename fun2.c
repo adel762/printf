@@ -23,6 +23,6 @@ int op(char c, va_list *list)
 	else if (c == 'R')
 		counter += rot_3(va_arg(*list, char *));
 	else if (c == 'b')
-		counter += MO_bin(&ll);
+		counter += MO_bin(&list);
 	return (counter);
 }
